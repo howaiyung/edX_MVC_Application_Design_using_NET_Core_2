@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>@ViewBag.Title</title>
+    </head>
+    <body>
+        <h1>@ViewBag.Header</h1>
+        <ul>
+            @foreach(var item in (string[])ViewBag.Items){
+                <li>@item</li>
+            }
+        </ul>
+    </body>
+</html>

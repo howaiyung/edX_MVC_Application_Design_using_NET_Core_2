@@ -1,0 +1,15 @@
+<html>
+    <!--use table as the navigation bar-->
+    <table>
+        <tr>
+            <td>|@Html.ActionLink("Home", "Index", "Home")</td>
+            <td>|@Html.ActionLink("City", "Index", "City")</td>
+            <td>|@Html.ActionLink("Country", "Index", "Country")</td>
+        </tr>
+    </table>
+    <hr/>
+    @RenderBody()
+    <hr/>
+    Welcome to My Website! (@DateTime.Now)
+</html>
+

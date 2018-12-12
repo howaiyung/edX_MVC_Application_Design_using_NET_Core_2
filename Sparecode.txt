@@ -1,0 +1,146 @@
+public CountryController(worldContext context){
+
+            _context = context;
+
+            /* DbContextOptions<worldContext> options;
+            var builder = new DbContextOptionsBuilder<worldContext>();
+            options = builder.Options;
+
+            _context = new worldContext(options);*/
+
+
+            //Countries = dbContext;
+
+
+            // Creating a constructor that allows an instance of the db to be used by all the other functions
+            // How can I make it such that I can assign the values from the dbContect to Countries without having to
+            // resort to a loop to add the individual countries and cities each.
+            //
+
+            //Countries = new List<Country>();
+
+            //var dbContext = new worldContext();
+
+            /* var records = dbContext.Country.Include(c => c.City).ToList();
+            
+            foreach (var record in records) {
+                System.Console.WriteLine($"Country: {record.Name}");
+                var counter = 1;
+                foreach (var cc in record.City) {
+                    System.Console.WriteLine($"\tActor {counter++}: {cc.Name}");
+                }
+            }*/
+
+            //Include(c => c.City).ToList();
+            
+
+            
+            /* foreach (var record in _context) {
+                System.Console.WriteLine($"Country: {record.Name}");
+                var counter = 1;
+                foreach (var cc in record.City) {
+                    System.Console.WriteLine($"\tActor {counter++}: {cc.Name}");
+                }
+            }*/
+            
+            
+        }
+
+
+        //private IList<Country> Countries { get; set; }
+
+        //private IList<Country> Countries GetCountries();
+        //private readonly worldContext _context;
+
+        //private readonly IList<Country> _context;
+
+        //private readonly  context = new FooBarEntities();
+
+        //private worldContext _context;
+        
+        //private IList<Country> countries;
+
+        public worldContext dbContext { get; set; }
+        public CountryController(){
+            
+            dbContext = new worldContext();
+
+        }
+        
+        public IActionResult GetCountries(){
+            IList<Country> countries = null;
+            countries = dbContext
+
+        }
+
+         //-----------------------------------------------------
+        /* 
+        public IActionResult Create() {
+            return View();
+        }
+
+   
+        public IActionResult Create(Country p) {
+            // business logic ...
+            return View(p);
+        }
+
+        public IActionResult Update() {
+            return View();
+        }
+
+        public IActionResult Update(Country p) {
+            // business logic ...
+            return View(p);
+        }
+
+        public IActionResult Delete(){
+            return View();
+        }
+
+        public IActionResult Delete(int id){
+            // business logic ...
+            return View();
+        }
+
+        */
+
+        public IActionResult Index() {
+            
+           
+
+            //var Countries = _context;
+
+            
+            var IList<Country> Countries = _context.Country;
+            
+            //var Countries = _context.
+            /* foreach (var record in Countries) {
+                System.Console.WriteLine($"Country: {record.Name}");
+            }*/
+
+            return View(Countries);
+        }
+
+
+        @foreach (var c in Model.City) {
+        <tr>
+            <td>@c.Id</td>
+            <td>@c.Name</td>
+            <td>@c.CountryCode</td>
+            <td>@c.District</td>
+            <td>@c.Population</td>
+        </tr>
+    }
+
+    <td>@p.NationalFlag</td>
+
+
+    @Html.Partial("_InputCountry", Model)
+
+
+     <td>@p.Id</td>
+            <td>@p.Name</td>
+            <td>@p.CountryCode</td>
+            <td>@p.District</td>
+            <td>@p.Population</td>

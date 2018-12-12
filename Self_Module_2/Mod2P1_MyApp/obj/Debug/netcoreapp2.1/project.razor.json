@@ -1,0 +1,14 @@
+{
+  "ProjectFilePath": "c:\\Users\\ZipZash\\Documents\\Projects\\Mod2P1_MyApp\\Mod2P1_MyApp.csproj",
+  "TargetFramework": "netcoreapp2.1",
+  "TagHelpers": [],
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  }
+}

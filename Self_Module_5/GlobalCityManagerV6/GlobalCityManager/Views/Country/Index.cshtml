@@ -1,0 +1,26 @@
+@model IList<GlobalCityManager.Models.Country>
+
+<h1>@ViewData["Title"]</h1>
+<table border="1">
+    <tr>
+        <th>Code</th>
+        <th>Name</th>
+        <th>Region</th>
+        <th>NationalFlag</th>
+        <th>Delete</th>
+        <th>Edit</th>
+        <th>Detail</th>
+    </tr>
+    @foreach (var p in Model) {
+        <tr>
+            <td>@p.Code</td>
+            <td>@p.Name</td>
+            <td>@p.Region</td>
+            <td>@p.NationalFlag</td>
+            <td>@Html.ActionLink("Remove", "Remove", new { id = p.Code })</td>
+            <td>@Html.ActionLink("Edit", "Edit", new { id = p.Code })</td>
+            <td>@Html.ActionLink("Detail", "ShowDetail", new { id = p.Code })</td>
+        </tr>
+    }
+</table>
+@Html.ActionLink("Add a New Country", "Create")

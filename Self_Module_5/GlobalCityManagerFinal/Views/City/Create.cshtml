@@ -1,0 +1,13 @@
+@model GlobalCityManager.Models.City
+
+<h1>Add a City</h1>
+@using (Html.BeginForm()) {
+    <table border="1">
+        @Html.Partial("_InputCity", Model)
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Add" /></td>
+        </tr>
+    </table>
+
+}

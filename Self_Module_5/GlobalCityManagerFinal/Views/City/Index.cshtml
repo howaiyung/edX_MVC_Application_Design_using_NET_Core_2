@@ -1,0 +1,22 @@
+@model IEnumerable<GlobalCityManager.Models.City>
+
+<h1>@ViewData["Title"]</h1>
+<table border="1">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Country Code</th>
+        <th>District</th>
+        <th>Population</th>
+        <th>Delete</th>
+        <th>Edit</th>
+    </tr>
+    @foreach (var p in Model) {
+        <tr>
+            @Html.Partial("_CityList", p)
+            <td>@Html.ActionLink("Delete", "Delete", new { id = p.Id })</td>
+            <td>@Html.ActionLink("Edit", "Edit", new { id = p.Id })</td>
+        </tr>
+    }
+</table>
+@Html.ActionLink("Add a New City", "Create")

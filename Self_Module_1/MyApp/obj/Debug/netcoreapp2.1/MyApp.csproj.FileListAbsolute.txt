@@ -1,0 +1,11 @@
+C:\Users\ZipZash\Documents\Projects\MyApp\bin\Debug\netcoreapp2.1\MyApp.deps.json
+C:\Users\ZipZash\Documents\Projects\MyApp\bin\Debug\netcoreapp2.1\MyApp.runtimeconfig.json
+C:\Users\ZipZash\Documents\Projects\MyApp\bin\Debug\netcoreapp2.1\MyApp.runtimeconfig.dev.json
+C:\Users\ZipZash\Documents\Projects\MyApp\bin\Debug\netcoreapp2.1\MyApp.dll
+C:\Users\ZipZash\Documents\Projects\MyApp\bin\Debug\netcoreapp2.1\MyApp.pdb
+C:\Users\ZipZash\Documents\Projects\MyApp\obj\Debug\netcoreapp2.1\MyApp.csprojAssemblyReference.cache
+C:\Users\ZipZash\Documents\Projects\MyApp\obj\Debug\netcoreapp2.1\MyApp.csproj.CoreCompileInputs.cache
+C:\Users\ZipZash\Documents\Projects\MyApp\obj\Debug\netcoreapp2.1\MyApp.AssemblyInfoInputs.cache
+C:\Users\ZipZash\Documents\Projects\MyApp\obj\Debug\netcoreapp2.1\MyApp.AssemblyInfo.cs
+C:\Users\ZipZash\Documents\Projects\MyApp\obj\Debug\netcoreapp2.1\MyApp.dll
+C:\Users\ZipZash\Documents\Projects\MyApp\obj\Debug\netcoreapp2.1\MyApp.pdb
